@@ -7,4 +7,4 @@ jobs:
       - checkout
       - run:
           name: Build all
-          command: nix-shell; exit
+          command: nix-build release.nix

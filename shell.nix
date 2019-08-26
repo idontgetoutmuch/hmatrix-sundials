@@ -2,10 +2,10 @@
 
 let
 
-my-hmatrix-sundials   = pkgs.haskellPackages.callPackage ./default.nix { };
+hmatrix-sundials = pkgs.haskellPackages.callPackage ./default.nix { };
 
 haskellDeps = ps: with ps; [
-  my-hmatrix-sundials
+  hmatrix-sundials
 ];
 
 in
